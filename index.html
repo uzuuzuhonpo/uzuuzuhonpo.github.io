@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【公式】うずうず本舗へようこそ！！！（うずら卵料理専門店）</title>
+    <meta name="description" content="奈良県橿原市のうずら卵料理専門店「うずうず本舗」公式ホームページ。うずら丼、うずらプリン、キッチンカー出店情報。マツコの知らない世界で紹介！">
+    <meta name="keywords" content="うずうず本舗,うずら卵,奈良,橿原,キッチンカー,うずら丼,グルメ,爆速">
+    <style>
+        body {
+            background-color: #000080; /* 伝統の紺色 */
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+            color: #ffffff;
+            font-family: "MS Pゴシック", "Shift_JIS", sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* レインボー・タイトル（SEO的にはH1が最強） */
+        h1 {
+            font-size: 3rem;
+            animation: rainbow 0.4s infinite linear;
+            text-shadow: 2px 2px #000;
+        }
+        @keyframes rainbow {
+            0% { color: #ff0000; } 25% { color: #ffff00; } 50% { color: #00ff00; }
+            75% { color: #00ffff; } 100% { color: #ff00ff; }
+        }
+
+        .pikapika { animation: blink 0.5s step-end infinite; color: #0f0; font-weight: bold; }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        /* 黄金のインフォメーション・テーブル */
+        table {
+            border: 10px outset #ffd700;
+            background-color: #fff;
+            color: #000;
+            margin: 20px auto;
+            width: 95%;
+            max-width: 700px;
+        }
+        th, td { border: 3px inset #ccc; padding: 10px; text-align: left; }
+        th { background-color: #ff0; text-align: center; }
+
+        /* 爆速ヒーローエリア（うずら卵の威圧感） */
+.hero {
+    width: 80%;
+    height: 250px;
+    background: url('chinese_don_egg_extra.jpeg') no-repeat center;
+    /* ここを修正！ */
+    background-size: cover; 
+    background-position: center; 
+    
+    border: 5px ridge #0f0;
+    margin: 0 auto;
+    overflow: hidden; /* 念のため、はみ出し禁止！ */
+}
+        a { color: #0ff; font-weight: bold; }
+        a:hover { color: #f0f; background: #fff; }
+                /* 3. 爆速で点滅する Welcome */
+        .pikapika {
+            font-weight: bold;
+            animation: blink 0.3s step-end infinite;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+
+    </style>
+</head>
+<body>
+
+    <marquee scrollamount="20" bgcolor="#ffff00" style="color:#000; font-weight:bold;">
+        🥚🥚🥚 【速報】マツコの知らない世界で紹介されました！ 絶品うずら卵料理を橿原からお届け！ 🥚🥚🥚
+    </marquee>
+
+    <h1>✨ うずうず本舗 公式ＨＰ（ダイジェスト版） ✨</h1>
+<div class="counter-box" style="background: #000; border: 3px double #fff; padding: 10px; display: inline-block;">
+    <p style="margin:0; font-size:0.8rem; color:#fff;">あなたは</p>
+    <span id="uzu_counter" style="color: #0f0; font-size: 2.5rem; font-family: 'Courier New', monospace; font-weight: bold; letter-spacing: 5px;">00000</span>
+    <p style="margin:0; font-size:0.8rem; color:#fff;">番目のウズリストです（キリ番厳守）</p>
+</div>
+    <script>
+    // ローカルストレージから訪問回数を取得（なければ0）
+    let visitCount = localStorage.getItem('uzu_visit_count') || 0;
+    
+    // 訪問回数をプラス1
+    visitCount = parseInt(visitCount) + 1;
+    
+    // ストレージに保存
+    localStorage.setItem('uzu_visit_count', visitCount);
+
+    // 0埋めの5桁にして表示（例：00123）
+    const formattedCount = visitCount.toString().padStart(5, '0');
+    document.getElementById('uzu_counter').innerText = formattedCount;
+
+    // キリ番判定（10回目とか）
+    if (visitCount % 10 === 0) {
+        alert("おめでとうございます！あなたは " + visitCount + " 番目のキリ番を踏みました！BBSへ報告してください！");
+    }
+</script>
+    <br>
+    <br>
+    <br>
+    <div class="hero"></div>
+
+    <p class="pikapika" style="background:red; color:yellow; display:inline-block; padding:10px; font-weight:bold;">
+        🚨 現在、キッチンカー橿原本店にて予約販売受付中！ 🚨
+    </p>
+
+    <table>
+        <tr><th colspan="2">🥚 店舗・出店情報 🥚</th></tr>
+        <tr><td>📍 所在地</td><td>奈良県橿原市中曽司町228-4</td></tr>
+        <tr><td>📞 連絡先</td><td>080-9016-5376（代表）</td></tr>
+        <tr><td>✉️ E-mail</td><td><a href="mailto:uzuuzuhonpo@gmail.com">uzuuzuhonpo@gmail.com</a></td></tr>
+        <tr><td>🍱 出前館</td><td><a href="https://demae-can.com/shop/menu/3343199">出前館でオーダーする</a></td></tr>
+        <tr><td>🍱 ウーバーイーツ</td><td><a href="https://www.ubereats.com/jp/store/%E3%81%86%E3%81%99%E3%81%86%E3%81%99%E6%9C%AC%E8%88%97/hkB2pAdZUzyGcjqcYjxtPA">ウーバーイーツでオーダーする</a></td></tr>
+        <tr><td>🥚 本家サイト</td><td><a href="https://uzuuzu.shop">うずうず本舗Webサイトへ</a></td></tr>
+        <tr><td>☕ セルフ焙煎珈琲</td><td><a href="https://uzuuzu.shop/uzuroastery/">うずうず珈琲焙煎工房</a>もスタート！</td></tr>
+    </table>
+
+    <div class="pikapika" style="margin: 30px;">
+        <img src="https://web.archive.org/web/20090830035543/http://geocities.com/Heartland/6211/undercon.gif">
+        <font size="5" color="#00ff00"><b>うずうずウォーズ、ただいま建設中！</b></font>
+        <img src="https://web.archive.org/web/20090830035543/http://geocities.com/Heartland/6211/undercon.gif">
+    </div>
+<table border="10" cellpadding="15" cellspacing="5" style="width: 95%; max-width: 1200px; background-color: #fff; color: #000; font-size: 1rem; border-color: #808080; border-style: double;">
+    <tr bgcolor="#000080">
+        <th colspan="2" style="color: #fff; font-size: 1.5rem; border: 3px inset #ccc;">
+            🍳 店舗情報とうずら卵の驚愕の真実と栄養価データシート 🍳
+        </th>
+    </tr>
+    <tr>
+        <td bgcolor="#ccc" width="30%" style="font-weight: bold; text-align: center; border: 2px inset #fff;">
+            店名
+        </td>
+        <td style="border: 2px inset #ccc;">
+            奈良県橿原市・<b>うずら卵料理専門店「うずうず本舗」</b>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ccc" style="font-weight: bold; text-align: center; border: 2px inset #fff;">
+            ビタミンB12含有量
+        </td>
+        <td style="border: 2px inset #ccc;">
+            うずら卵には、神経の働きを助け、貧血予防に効果的なビタミンB12が豊富に含まれています。鶏卵100gと比較して、うずら卵は約5.2倍もの含有量を誇ります。小さいけれど、パワーは超ド級です。
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ccc" style="font-weight: bold; text-align: center; border: 2px inset #fff;">
+            ローカル情報
+        </td>
+        <td style="border: 2px inset #ccc;">
+            当店のキッチンカーでは、新鮮なうずら卵を贅沢に使用。特に「自家製うずらマヨネーズ」は、注文を受けてから調合するフレッシュさが自慢です。橿原神宮や明日香村の観光帰りに、爆速でエネルギーチャージするなら「うずうず本舗」のうずら丼が最適です。
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ccc" style="font-weight: bold; text-align: center; border: 2px inset #fff;">
+            メディア掲載
+        </td>
+        <td style="border: 2px inset #ccc;">
+            マツコの知らない世界、奈良放送等のTV番組でも紹介された通り、うずら卵は今、空前のブーム。スイーツ（プリン・ドーナツ）からガッツリ系丼まで、うずうず本舗は「うずら卵の可能性」を最大限に引き出しています。奈良グルメの新定番として大注目の一品です。
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ccc" style="font-weight: bold; text-align: center; border: 2px inset #fff;">
+            推奨メニュー
+        </td>
+        <td style="border: 2px inset #ccc;">
+            うずら丼（自家製うずらマヨネーズ仕様）、うずうずプリン、うずうずサブレ
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ff0" colspan="2" style="font-size: 0.8rem; text-align: center; border: 2px inset #ccc;">
+            【検索キーワード】奈良 橿原 グルメ うずら卵 キッチンカー 栄養 奈良県 橿原市 専門店 おすすめ ランチ テイクアウト 栄養価 鶏卵 ビタミンB12 鉄分 豊富
+        </td>
+    </tr>
+</table>
+    <hr>
+<div style="margin: 20px;">
+    <a href="https://uzuuzu.shop">
+        <img src="https://via.placeholder.com/88x31/000/fff?text=UZU-UZU" alt="相互リンク：うずうず本舗本家" border="0">
+    </a>
+    
+    <a href="#">
+        <img src="https://via.placeholder.com/88x31/f00/fff?text=Banner" alt="バナー募集中" border="0">
+    </a>
+</div>
+
+<p style="font-size: 0.8rem; color: #ccc;">
+    推奨環境：Internet Explorer 5.5 / Netscape Navigator 4.0<br>
+    <span style="color: #666;">（※本サイトは最新のHTML5基準で構成されており、実際には全てのモダンブラウザで高速表示可能です）</span>
+</p>
+    <footer style="margin-top: 50px; border-top: 3px double #fff; padding: 20px;">
+        Copyright (C) 2018-2026 うずうず本舗. All Rights Reserved.<br>
+        Produced by <a href="#">うずうず本舗 システム開発部</a>
+    </footer>
+
+</body>
+</html>
