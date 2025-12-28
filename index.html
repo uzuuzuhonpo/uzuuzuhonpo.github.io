@@ -142,7 +142,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     localStorage.setItem('uzu_visit_count', visitCount);
 
     // 0埋めの5桁にして表示（例：00123）
-    const formattedCount = visitCount.toString().padStart(5, '0');
+    const formattedCount = visitCount.toString().padStart(7, '0');
     document.getElementById('uzu_counter').innerText = formattedCount;
 
     // キリ番判定（10回目とか）
