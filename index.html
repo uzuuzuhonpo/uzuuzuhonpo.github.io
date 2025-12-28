@@ -63,18 +63,18 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         th { background-color: #ff0; text-align: center; }
 
         /* 爆速ヒーローエリア（うずら卵の威圧感） */
-.hero {
-    width: 80%;
-    height: 250px;
-    background: url('chinese_don_egg_extra.jpeg') no-repeat center;
-    /* ここを修正！ */
-    background-size: cover; 
-    background-position: center; 
-    
-    border: 5px ridge #0f0;
-    margin: 0 auto;
-    overflow: hidden; /* 念のため、はみ出し禁止！ */
-}
+        .hero {
+            width: 80%;
+            height: 250px;
+            background: url('chinese_don_egg_extra.jpeg') no-repeat center;
+            /* ここを修正！ */
+            background-size: cover; 
+            background-position: center; 
+            
+            border: 5px ridge #0f0;
+            margin: 0 auto;
+            overflow: hidden; /* 念のため、はみ出し禁止！ */
+        }
         a { color: #0ff; font-weight: bold; }
         a:hover { color: #f0f; background: #fff; }
                 /* 3. 爆速で点滅する Welcome */
@@ -83,7 +83,33 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
             animation: blink 0.3s step-end infinite;
         }
         @keyframes blink { 50% { opacity: 0; } }
+        .animation-text2 {
+            animation: color-change 3s infinite;
+            margin: 30px;
+            font-weight: bold;
 
+        }   
+        @keyframes color-change {
+            0% { color: #ff0000; }
+            25% { color: #00ff00; }
+            50% { color: #0000ff; }
+            75% { color: #ffff00; }
+            100% { color: #ff00ff; }
+        }   
+        .animation-img2 {
+            animation: enlarge 1s linear infinite;
+        }       
+        @keyframes enlarge {
+            0% { transform: scale(100%); }
+            24% { transform: scale(100%); }
+            25% { transform: scale(120%); }
+            49% { transform: scale(120%); }
+            50% { transform: scale(150%); }
+            74% { transform: scale(150%); }
+            75% { transform: scale(120%); }
+            99% { transform: scale(120%); }
+            100% { transform: scale(100%);}
+        }
     </style>
 </head>
 <body>
@@ -93,9 +119,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     </marquee>
 
     <h1>
-        <img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
+        <img src="favicon.png" class="animation-img2" alt="egg" style="height: 1.5em; vertical-align: middle;">
         うずうず本舗 公式ホームページ（爆速版）
-        <img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
+        <img src="favicon.png" class="animation-img2" alt="egg" style="height: 1.5em; vertical-align: middle;">
     </h1>
     <p style="margin:0; font-size:1.8rem; color:#fff;">- Welcome to Uzuuzu Honpo Home Page -</p>
     <br><br>
@@ -144,10 +170,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         <tr><td>☕ セルフ焙煎珈琲</td><td><a href="https://uzuuzu.shop/uzuroastery/">うずうず珈琲焙煎工房</a>もスタート！</td></tr>
     </table>
 
-    <div style="margin: 30px;">
-        <img src="https://web.archive.org/web/20090830035543/http://geocities.com/Heartland/6211/undercon.gif">
-        <font size="5" color="#00ff00"><b>うずうずウォーズ、ただいま建設中！</b></font>
-        <img src="https://web.archive.org/web/20090830035543/http://geocities.com/Heartland/6211/undercon.gif">
+    <div class="animation-text2">
+        <font size="5"><b>YouTubeチャンネル、TikTokチャンネル登録者募集中！</b></font>
     </div>
 <table border="10" cellpadding="15" cellspacing="5" style="width: 95%; max-width: 1200px; background-color: #fff; color: #000; font-size: 1rem; border-color: #808080; border-style: double;">
     <tr bgcolor="#000080">
@@ -201,70 +225,62 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         </td>
     </tr>
 </table>
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
-<img src="favicon.png" alt="egg" style="height: 1.5em; vertical-align: middle;">
+<style>
+.line-img {
+    animation: line-move 0.5s linear infinite;   
+    height: 1.5em; 
+    vertical-align: middle; 
+}
+@keyframes line-move {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    100% { transform: translateX(00px); }
+}
+</style>
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
+<img class="line-img" src="favicon.png" alt="egg">
 <br><br>
     <hr>
 <div style="margin: 20px;">
     <a href="https://uzuuzu.shop">
         <img src="https://via.placeholder.com/88x31/000/fff?text=UZU-UZU" alt="相互リンク：うずうず本舗本家" border="0">
     </a>
-    
+    &nbsp;&nbsp;
     <a href="#">
         <img src="https://via.placeholder.com/88x31/f00/fff?text=Banner" alt="バナー募集中" border="0">
     </a>
