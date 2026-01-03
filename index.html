@@ -110,12 +110,21 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
             99% { transform: scale(120%); }
             100% { transform: scale(100%);}
         }
+
+        /* 令和の点滅（CSS） */
+        .blink {
+        animation: blink-animation 0.4s steps(3, start) infinite;
+        }
+
+        @keyframes blink-animation {
+        to { visibility: hidden; }
+        }
     </style>
 </head>
 <body>
 
     <marquee scrollamount="20" bgcolor="#ffff00" style="color:#000; font-weight:bold;">
-        🥚🥚🥚 【速報】マツコの知らない世界で紹介されました！ 絶品うずら卵料理を橿原からお届け！ 🥚🥚🥚
+        🥚🥚🥚 【ニュース】TBS系マツコの知らない世界で紹介されました！ 絶品うずら卵料理を橿原からお届け！ 🥚🥚🥚
     </marquee>
 
     <h1>
@@ -123,7 +132,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         うずうず本舗 公式ホームページ（爆速版）
         <img src="favicon.png" class="animation-img2" alt="egg" style="height: 1.5em; vertical-align: middle;">
     </h1>
-    <p style="margin:0; font-size:1.8rem; color:#fff;">- Welcome to Uzuuzu Honpo Home Page -</p>
+    <p style="margin:0; font-size:1.8rem; color:#fff;" class="blink">- Welcome to Uzuuzu Honpo Home Page -</p>
     <br><br>
 
 <div class="counter-box" style="background: #000; border: 3px double #fff; padding: 10px; display: inline-block;">
@@ -161,7 +170,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
     <table>
         <tr><th colspan="2">🥚 店舗・出店情報 🥚</th></tr>
-        <tr><td>📍 所在地</td><td>奈良県橿原市中曽司町228-4</td></tr>
+        <tr><td>📍 所在地</td><td>奈良県橿原市中曽司町228-4<br>（キッチンカーによる移動販売）
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6690.320406161157!2d135.76344139356522!3d34.51869706481584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001330074953e83%3A0x6604ec571ce31fe7!2z44GG44Ga44GG44Ga5pys6IiXIOapv-WOn-acrOW6lw!5e0!3m2!1sja!2sjp!4v1767420669372!5m2!1sja!2sjp" width="220" height="140" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </td>
+        </tr>
         <tr><td>📞 連絡先</td><td>080-9016-5376（代表）</td></tr>
         <tr><td>✉️ E-mail</td><td><a href="mailto:uzuuzuhonpo@gmail.com">uzuuzuhonpo@gmail.com</a></td></tr>
         <tr><td>🍱 出前館</td><td><a href="https://demae-can.com/shop/menu/3343199">出前館</a>でオーダーする</td></tr>
@@ -200,20 +212,20 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
             ローカル情報
         </td>
         <td style="border: 2px inset #ccc;">
-            当店のキッチンカーでは、新鮮なうずら卵を贅沢に使用。特に「自家製うずらマヨネーズ」は、注文を受けてから調合するフレッシュさが自慢です。橿原神宮や明日香村の観光帰りに、爆速でエネルギーチャージするなら「うずうず本舗」のうずら丼が最適です。
+            初代天皇を祀る広大な敷地と荘厳な社殿が圧巻の橿原神宮。石舞台古墳などの史跡が点在し、のどかな万葉の風景が広がる明日香村。奈良観光の帰りに、爆速でエネルギーチャージするなら「うずうず本舗」のうずら丼が最適なソリューションです。
         </td>
     </tr>
     <tr>
         <td bgcolor="#ccc" style="font-weight: bold; text-align: center; border: 2px inset #fff;">
-            メディア掲載
+            お店情報
         </td>
         <td style="border: 2px inset #ccc;">
-            マツコの知らない世界、奈良放送等のTV番組でも紹介された通り、うずら卵は今、空前のブーム。スイーツ（プリン・ドーナツ）からガッツリ系丼まで、うずうず本舗は「うずら卵の可能性」を最大限に引き出しています。奈良グルメの新定番として大注目の一品です。
+            当店のキッチンカーでは、新鮮なうずら卵を贅沢に使用。特に「自家製うずらマヨネーズ」は、注文を受けてから調合するフレッシュさが自慢です。うずら卵は今、空前の大ブーム。スイーツ（プリン・ドーナツ）からガッツリ系丼まで、うずうず本舗は「うずら卵の可能性」を最大限に引き出しています。奈良グルメの新定番として大注目の一品です。
         </td>
     </tr>
     <tr>
         <td bgcolor="#ccc" style="font-weight: bold; text-align: center; border: 2px inset #fff;">
-            推奨メニュー
+            メニュー例
         </td>
         <td style="border: 2px inset #ccc;">
             うずら丼（自家製うずらマヨネーズ）、中華丼、うずらフライ丼、うずうず玉吸い、うずうずプリン、うずうずサブレ、うずうずわらび餅、うずうずパンケーキ、TKG
@@ -278,16 +290,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     <hr>
 <div style="margin: 20px;">
     <a href="https://uzuuzu.shop">
-        <img src="https://via.placeholder.com/88x31/000/fff?text=UZU-UZU" alt="相互リンク：うずうず本舗本家" border="0">
-    </a>
-    &nbsp;&nbsp;
-    <a href="#">
-        <img src="https://via.placeholder.com/88x31/f00/fff?text=Banner" alt="バナー募集中" border="0">
+        相互リンク：うずうず本舗本家
     </a>
 </div>
 
 <p style="font-size: 0.8rem; color: #ccc;">
-    推奨環境：Internet Explorer 5.5 / Netscape Navigator 4.0<br>
+    推奨環境：<s>Internet Explorer 5.5 / Netscape Navigator 4.0<br></s>
     <span style="color: #666;">（※本サイトは最新のHTML5基準で構成されており、実際には全てのモダンブラウザで高速表示可能です）</span>
 </p>
     <footer style="margin-top: 50px; border-top: 3px double #fff; padding: 20px;">
